@@ -136,14 +136,16 @@ table {
 
 /* css reset end */
 body {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(213, 212, 212);
 }
 
 /* header start */
 
 .header {
     width: 100%;
-    background: #dcd7d7;
+    background: #808080;
+}
+.headerInfo{
     display: flex;
     justify-content: space-between;
 }
@@ -155,7 +157,7 @@ body {
     float: left;
     width: 60px;
     height: 60px;
-    background-color: #a39f9f;
+    background-color:#c8c5c5;
     line-height: 60px;
     text-align: center;
     color: white;
@@ -170,7 +172,7 @@ body {
     font-size: 20px;
 }
 
-.header .menu {}
+.headerInfo .menu {}
 
 .menu li {
     float: right;
@@ -192,11 +194,11 @@ body {
     background-color: #4c4a4a66;
 }
 
-.header .Info {
+.headerInfo .Info {
     width: auto;
 }
 
-.header .Info .img {
+.headerInfo .Info .img {
     float: left;
     width: 46px;
     height: 46px;
@@ -215,8 +217,32 @@ body {
 /* header end */
 /* content start*/
 .content {
-    width: 80%;
-    height: 1000px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* content end */
+/* footer start */
+.footer{
+    width: 100%;
+    background: #808080;
+}
+.footer .footerInfo{
+    color:#1a1a1a;
+    font-size: 14px;
+    padding: 40px 40px 20px 40px;
+    line-height: 24px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.footerInfo .logo{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #c8c5c5;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+/* footer end */

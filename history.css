@@ -1,0 +1,195 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    /*背景*/
+    /* background-color: #cccccc;
+    height: 1000px; */
+    /*可不用，試滑動 */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    /*灰底框框 */
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #939393;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.historyTopic {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+table.recordTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recordTable th,td {
+    padding: 20px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.viewRecord-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 200px;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.viewRecord-btn:hover {
+    background: #bbb;
+    color: #fff;
+}
+
+img.hisImg {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
