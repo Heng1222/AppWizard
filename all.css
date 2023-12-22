@@ -145,7 +145,8 @@ body {
     width: 100%;
     background: #808080;
 }
-.headerInfo{
+
+.headerInfo {
     display: flex;
     justify-content: space-between;
 }
@@ -157,7 +158,7 @@ body {
     float: left;
     width: 60px;
     height: 60px;
-    background-color:#c8c5c5;
+    background-color: #c8c5c5;
     line-height: 60px;
     text-align: center;
     color: white;
@@ -206,7 +207,7 @@ body {
     background-color: #fff;
     margin-top: 7px;
     margin-bottom: 7px;
-    color:black;
+    color: black;
     line-height: 46px;
 }
 
@@ -215,6 +216,8 @@ body {
 }
 
 /* header end */
+
+
 /* content start*/
 .content {
     max-width: 1440px;
@@ -222,20 +225,294 @@ body {
 }
 
 /* content end */
+/* login.html start */
+
+.loginArea {
+    margin: 0 auto;
+    max-width: 300px;
+    background: #f1f7fe;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em #e6e9f9;
+    gap: 2em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.loginArea .email {
+    /*background: white;
+    box-shadow: 0 0 2em #e6e9f9;*/
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: #4d4d4d;
+}
+
+.loginArea .email label {
+    font-size: 20px;
+}
+
+.loginArea .email input {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 95%;
+    font-size: 20px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.52em;
+    padding-left: 0.7em;
+}
+
+.loginArea .password {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: #4d4d4d;
+}
+
+.loginArea .password label {
+    font-size: 20px;
+}
+
+.loginArea .password input {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 95%;
+}
+
+.loginArea .login {
+    padding: 1em;
+    background: #3e4684;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.loginArea .foot {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    color: #5e5e5e;
+    gap: 14em;
+}
+
+.loginArea .foot span {
+    cursor: pointer;
+}
+
+button .login {
+    cursor: pointer;
+}
+
+/* login.html end */
+/* analysisResult start */
+.dashboard {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+}
+
+h1.pageTopic {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 30px 0px 0px 40px;
+    margin-bottom: 10px;
+    width: 230px;
+    border-bottom: #000000 solid 2px;
+}
+
+.dashboard .left {
+    padding-right: 1%;
+    padding-left: 5%;
+    width: 44%;
+    /*50-5-1*/
+}
+
+.dashboard .right {
+    padding-right: 5%;
+    padding-left: 1%;
+    width: 44%;
+}
+
+.background {
+    background-color: #a4a4a4;
+    /* box-shadow: 1px 3px #353535; */
+    padding: 20px;
+    margin: 1%;
+    border-radius: 5%;
+    border: #727272 solid 1px;
+    box-shadow: 3px 4px #626262;
+}
+
+.float {
+    float: left;
+}
+
+.InfoArea {
+    width: 100%;
+    height: 300px;
+}
+
+.InfoArea .InfoItem {
+    width: 28.3333%;
+    padding: 1%;
+    /*覆蓋background預設padding*/
+}
+
+.InfoItem .topic {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.InfoItem .Info {
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+
+h2.chartTopic {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.quadrant {}
+
+.background .chartimg {
+    width: 100%;
+}
+
+.image-popup {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #0000009b;
+    position: fixed;
+    left: 0%;
+    z-index: 9999;
+
+
+}
+
+.image-popup .popup-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 3% 25% 3% 25%;
+
+}
+
+/* analysisResult end */
+
+/* fix html start */
+.fix_container {
+    background-color: #939393;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.fix_form {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    flex-basis: 50px;
+}
+
+.fix_form:last-child {
+    margin-bottom: 10px;
+}
+
+.fix_form .fixLabel {
+    padding: 5px;
+    margin: 2px 5px 2px 5px;
+}
+
+.fix_form input[type="text"],
+.fix_form input[type="date"],
+.fix_form input[type="password"],
+.fix_form select {
+    flex-grow: 1;
+    padding: 7px;
+    margin: 2px 5px 2px 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+/* 送出紐 */
+.submit_btn {
+    margin: 10px 610px 0px;
+    text-align: right;
+}
+
+.submit_btn input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 580px;
+}
+
+.submit_btn input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+.contentTopic {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* fix.html end */
+
 /* footer start */
-.footer{
+.footer {
     width: 100%;
     background: #808080;
 }
-.footer .footerInfo{
-    color:#1a1a1a;
+
+.footer .footerInfo {
+    color: #1a1a1a;
     font-size: 14px;
     padding: 40px 40px 20px 40px;
     line-height: 24px;
     font-family: Arial, sans-serif;
     text-align: center;
 }
-.footerInfo .logo{
+
+.footerInfo .logo {
     margin: 0 auto;
     width: 80px;
     height: 80px;
@@ -245,4 +522,161 @@ body {
     color: white;
     margin-bottom: 10px;
 }
+
 /* footer end */
+
+/* modification.html start */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    margin-top: 2em;
+}
+
+table {
+    margin: 10px;
+    border-collapse: collapse;
+    width: 250px;
+    white-space: nowrap;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+img {
+    width: 50px;
+}
+
+#content {
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+#confirmationButton {
+    margin-top: 2em;
+    clear: both;
+    text-align: center;
+}
+
+/* modification.html end */
+
+/* select.html start */
+.select-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.fixed-section {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 300px;
+    position: relative;
+}
+
+.app-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    margin-left: 10px;
+}
+
+.date-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+input[type="date"] {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .app-selection {
+        flex-direction: column;
+    }
+}
+
+.search-btn {
+    padding: 8px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #2980b9;
+}
+
+/* select.html end */

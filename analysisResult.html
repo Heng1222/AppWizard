@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <div id="imagePopup" class="image-popup" onclick="hidePopup()">
+        <img src="" class="popup-image">
+    </div>
+    <!-- 預覽視窗 end-->
+    <div class="header">
+        <div class="headerInfo content">
+            <div class="logoArea">
+                <div class="logo">60X60</div>
+                <h1 class="logoN">App Wizard</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="" class="topic">
+                        <div class="Info">
+                            <div class="img">46X46</div>
+                            帥哥
+                        </div>
+                    </a></li>
+                <li><a href="" class="topic">頁面1</a></li>
+                <li><a href="" class="topic">頁面2</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class='pageTopic'>分析結果</h1>
+        <div class="dashboard">
+            <div class="left">
+                <div class="InfoArea">
+                    <div class="background InfoItem float">
+                        <h2 class="topic">分析對象</h2>
+                        <p class="Info" style="margin-bottom: 10px;">
+                            <img src="https://play-lh.googleusercontent.com/uLYOxFqChuYOY6JuKHql1u-vPNeLcEiVC9-j6JK-FKSNH0f3D24Hl5IhzU3KNtaH0fs"
+                                alt="Icon" width="40px" height="40px">
+                        </p>
+                    </div>
+                    <div class="background InfoItem float">
+                        <h2 class="topic" style="margin-bottom: 10px;">日期</h2>
+                        <p class="Info" style="line-height: 20px; font-size: 20px; margin-bottom: 10px;"> <!-- 日期文字調小-->
+                            2023/2/23<br />~<br />2023/12/6
+                        </p>
+                    </div>
+                    <div class="background InfoItem float">
+                        <h2 class="topic">評論數量</h2>
+                        <p class="Info">200</p>
+                    </div>
+                    <div class="background InfoItem float">
+                        <h2 class="topic">處理建議</h2>
+                        <p class="Info">None</p>
+                    </div>
+                    <div class="background InfoItem float">
+                        <h2 class="topic">服務屬性表現最佳</h2>
+                        <p class="Info" style="color: rgb(0, 121, 0);">綁定卡</p>
+                    </div>
+                    <div class="background InfoItem float">
+                        <h2 class="topic">需注意</h2>
+                        <p class="Info" style="color: rgb(219, 0, 0);">定位</p>
+                    </div>
+                </div>
+                <div class="background clickable" onclick="showPopup(3)">
+                    <h2 class="chartTopic">IPA 二為矩陣分析</h2>
+                    <img class="chartimg" src="https://www.yongxi-stat.com/wp-content/uploads/2023/10/ipa2_new.jpg.webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="background clickable" onclick="showPopup(4)" style="margin-bottom: 3%;">
+                    <h2 class="chartTopic">品質類別歸類結果</h2>
+                    <img class="chartimg" src="https://miro.medium.com/v2/resize:fit:1200/1*PFgr-aLmfHYlYSKv9XZoAw.png"
+                        alt="">
+                </div>
+                <div class="background clickable" onclick="showPopup(2)">
+                    <h2 class="chartTopic">情緒分析結果對於類別滿意度之影響</h2>
+                    <img class="chartimg"
+                        src="https://learn.microsoft.com/zh-tw/power-bi/paginated-reports/report-design/visualizations/media/paginated-reports-visualizations/bar-chart.gif">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <div class="footerInfo">
+                <div class="logo">80X80</div>
+                114級專題-第六組 App Wizard<br />
+                © 2023 高雄大學資管系 National University of Kaohsiung
+            </div>
+        </div>
+    </div>
+    <script>
+        function showPopup(quadrant) {
+            const popup = document.getElementById('imagePopup');
+            const popupImage = popup.querySelector('.popup-image');
+
+            switch (quadrant) {
+                case 2:
+                    popupImage.src = "https://github.com/a1103312/photo/blob/main/%E6%BB%BF%E6%84%8F%E5%BA%A6%E4%B9%8B%E5%BD%B1%E9%9F%BF.png?raw=true";
+                    break;
+                case 3:
+                    popupImage.src = "https://github.com/a1103312/photo/blob/main/IPA%E4%BA%8C%E7%B6%AD%E7%9F%A9%E9%99%A3%E5%88%86%E6%9E%90.png?raw=true";
+                    break;
+                case 4:
+                    popupImage.src = "https://github.com/a1103312/photo/blob/main/%E5%93%81%E8%B3%AA%E9%A1%9E%E5%88%A5%E6%AD%B8%E9%A1%9E.png?raw=true";
+                    break;
+            }
+
+            popup.style.display = 'block';
+        }
+
+        function hidePopup() {
+            const popup = document.getElementById('imagePopup');
+            popup.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
