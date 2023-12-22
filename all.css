@@ -526,15 +526,11 @@ h2.chartTopic {
 /* footer end */
 
 /* modification.html start */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .modifycontainer {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     margin-top: 2em;
 }
 
@@ -545,18 +541,18 @@ body {
     white-space: nowrap;
 }
 
-th,
-td {
+.modifycontainer th,
+.modifycontainer td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
 }
 
-img {
+.modifycontainer img {
     width: 50px;
 }
 
-#content {
+.modifycontainer #content {
     margin-top: 2em;
     font-size: 1.2em;
 }
