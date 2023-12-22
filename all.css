@@ -581,7 +581,7 @@ img {
     margin-bottom: 20px;
 }
 
-.container {
+.select-container .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -621,12 +621,12 @@ img {
 }
 
 
-input[type="radio"] {
+.select-container input[type="radio"] {
     margin-right: 5px;
 }
 
 
-ul {
+.select-container ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -634,13 +634,13 @@ ul {
     flex-wrap: wrap;
 }
 
-li {
+.select-container li {
     margin-bottom: 10px;
     margin-right: 20px;
 }
 
 
-button {
+.select-container button {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: #fff;
@@ -649,12 +649,12 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.select-container button:hover {
     background-color: #45a049;
 }
 
 
-input[type="date"] {
+.select-container input[type="date"] {
     padding: 8px;
     border-radius: 5px;
 }
