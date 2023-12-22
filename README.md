@@ -8,8 +8,6 @@ findRecord.html
 fix.html
 
 
-history.html
-
 
 home.html
 
