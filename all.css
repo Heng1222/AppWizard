@@ -538,7 +538,7 @@ body {
     margin-top: 2em;
 }
 
-table {
+.container table {
     margin: 10px;
     border-collapse: collapse;
     width: 250px;
