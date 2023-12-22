@@ -533,12 +533,12 @@ body {
     flex-direction: column;
 }
 
-.container {
+.modifycontainer {
     display: flex;
     margin-top: 2em;
 }
 
-.container table {
+.modifycontainer table {
     margin: 10px;
     border-collapse: collapse;
     width: 250px;
