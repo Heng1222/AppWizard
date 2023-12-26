@@ -1,5 +1,5 @@
 # App-Wizard
-analysisResult.html
+https://heng1222.github.io/AppWizard/analysisResult.html
 
 
 findRecord.html
