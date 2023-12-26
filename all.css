@@ -136,14 +136,15 @@ table {
 
 /* css reset end */
 body {
-    background-color: rgb(213, 212, 212);
+    background-color: #F2F2F2;
+    /* background-color: rgb(213, 212, 212); */
 }
 
 /* header start */
 
 .header {
     width: 100%;
-    background: #808080;
+    background: #a30202b6;
 }
 
 .headerInfo {
@@ -188,11 +189,12 @@ body {
     text-decoration: none;
     line-height: 60px;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .menu .topic:hover {
-    background-color: #4c4a4a66;
+    background-color: rgb(255, 255, 255);
+    color: #a30202b6;
 }
 
 .headerInfo .Info {
@@ -287,6 +289,8 @@ body {
 }
 
 .loginArea .login {
+    text-decoration: none;
+    text-align: center;
     padding: 1em;
     background: #3e4684;
     color: white;
@@ -500,11 +504,11 @@ h2.chartTopic {
 /* footer start */
 .footer {
     width: 100%;
-    background: #808080;
+    background: #a30202b6;
 }
 
 .footer .footerInfo {
-    color: #1a1a1a;
+    color: #F2F2F2;
     font-size: 14px;
     padding: 40px 40px 20px 40px;
     line-height: 24px;
@@ -577,14 +581,44 @@ h2.chartTopic {
     margin-bottom: 20px;
 }
 
+.select-text{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
 .select-container .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-    max-height: 300px;
+    width: 100%;
+    height: 250px;
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}   
+.select-container .item{
+    width: 17%;
+    border-radius: 15%;
+    /* background-color: rgb(187, 187, 187); */
+    margin: 10px;
+    cursor: pointer;
+}
+.select-container .item img{
+    width: 60%;
+    padding: 20%;
+    margin: 0 auto;
+}
+.select-container .item:hover{
+    background-color:rgb(139, 139, 139);
+}
+.select-container .active{
+    background-color:rgb(172, 172, 172);
 }
 
 .app-selection {
@@ -592,8 +626,15 @@ h2.chartTopic {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+
 }
 
+.search-input {
+    height:40px;
+    width:250px;
+    border-radius:10px;
+    padding: 0 35px;
+}
 .search-bar {
     display: flex;
     align-items: center;
@@ -602,16 +643,17 @@ h2.chartTopic {
 
 .search-bar input {
     margin-left: 10px;
+    margin-right: 15px;
 }
 
 .date-selection {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .buttons {
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }

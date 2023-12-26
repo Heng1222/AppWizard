@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 100vh;
+    }
+
+    .quadrant {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .info {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      text-align: center;
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+
+    .image-popup {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-image {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+<body>
+  <div class="quadrant" class="info">
+    
+    <table>
+      <tr>
+        <th>分析對象</th>
+        <th>日期</th>
+        <th>評論數量</th>
+        <th>處理建議</th>
+      </tr>
+      <tr>
+        <td><img src="https://play-lh.googleusercontent.com/uLYOxFqChuYOY6JuKHql1u-vPNeLcEiVC9-j6JK-FKSNH0f3D24Hl5IhzU3KNtaH0fs" alt="Icon" width="50" height="50"></td>
+        <td>2023/2/23~2023/12/6</td>
+        <td>200</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="quadrant clickable" onclick="showPopup(2)">
+    
+    情<br>緒<br>分<br>析<br>的<br>結<br>果<br>對<br>於<br>類<br>別<br>滿<br>意<br>度<br>之<br>影<br>響<br>
+    <img src="https://learn.microsoft.com/zh-tw/power-bi/paginated-reports/report-design/visualizations/media/paginated-reports-visualizations/bar-chart.gif" alt="" width="600" height="400">
+  </div>
+  <div class="quadrant clickable" onclick="showPopup(3)">
+    
+    IPA<br>二<br>維<br>矩<br>陣<br>分<br>析<br>
+    <img src="https://www.yongxi-stat.com/wp-content/uploads/2023/10/ipa2_new.jpg.webp" alt="" width="600" height="450">
+  </div>
+  <div class="quadrant clickable" onclick="showPopup(4)">
+    
+    品<br>質<br>類<br>別<br>歸<br>類<br>結<br>果<br>
+    <img src="https://miro.medium.com/v2/resize:fit:1200/1*PFgr-aLmfHYlYSKv9XZoAw.png" alt="" width="600" height="400">
+  </div>
+  <div id="imagePopup" class="image-popup" onclick="hidePopup()">
+    
+    <img src="" alt="Popup Image" class="popup-image">
+  </div>
+
+  <script>
+    function showPopup(quadrant) {
+      const popup = document.getElementById('imagePopup');
+      const popupImage = popup.querySelector('.popup-image');
+
+      switch(quadrant) {
+        case 2:
+          popupImage.src = "https://github.com/a1103312/photo/blob/main/%E6%BB%BF%E6%84%8F%E5%BA%A6%E4%B9%8B%E5%BD%B1%E9%9F%BF.png?raw=true";
+          break;
+        case 3:
+          popupImage.src = "https://github.com/a1103312/photo/blob/main/IPA%E4%BA%8C%E7%B6%AD%E7%9F%A9%E9%99%A3%E5%88%86%E6%9E%90.png?raw=true";
+          break;
+        case 4:
+          popupImage.src = "https://github.com/a1103312/photo/blob/main/%E5%93%81%E8%B3%AA%E9%A1%9E%E5%88%A5%E6%AD%B8%E9%A1%9E.png?raw=true";
+          break;
+      }
+
+      popup.style.display = 'flex';
+    }
+
+    function hidePopup() {
+      const popup = document.getElementById('imagePopup');
+      popup.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

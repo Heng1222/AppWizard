@@ -205,17 +205,23 @@ body{
 }
 
 
-button {
+a.home-button {
+    width: 70px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
     background-color: #e74c4c; 
     color: #ffffff; 
     padding: 7px 10px;
     border: none; 
     cursor: pointer; 
     border-radius: 5px;
+    margin-top: 15px;
 }
 
 /* 滑鼠懸停時的按鈕樣式 */
-button:hover {
+a.home-button:hover {
     background-color: #2980b9; /* 滑鼠懸停時的背景顏色 */
 }
 
