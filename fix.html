@@ -11,27 +11,34 @@
 <body>
     <div class="header">
         <div class="headerInfo content">
-            <div class="logoArea">
-                <div class="logo">60X60</div>
-                <h1 class="logoN">App Wizard</h1>
-            </div>
-            <ul class="menu">
-                <li><a href="" class="topic">
-                        <div class="Info">
-                            <div class="img">46X46</div>
-                            帥哥
-                        </div>
-                    </a></li>
-                <li><a href="" class="topic">頁面1</a></li>
-                <li><a href="" class="topic">頁面2</a></li>
-            </ul>
+          <div class="logoArea">
+            <!-- <div class="logo"></div> -->
+            <h1 class="logoN">App Wizard</h1>
+          </div>
+          <ul class="menu">
+            <li><a href="" class="topic" style="pointer-events: none;">
+                <div class="Info">
+                  <div class="img"></div>
+                  Kai
+                </div>
+              </a>
+              <ul class="drop-down-menu">
+                <li><a href="fix.html">修改資料</a>
+                </li>
+                <li><a href="index.html">登出</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="home.html" class="topic">首頁</a></li>
+            <li><a href="select.html" class="topic">開始分析</a></li>
+            <li><a href="findRecord.html" class="topic">分析紀錄</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
     <div class="content" style="height:600px;">
         <h1 class="contentTopic">修改個人資料</h1>
-
         <!-- 可能要討論一下哪些不能修改 -->
-        <div>
+        <div class="fix-box">
             <form action="" method="post">
                 <div class="fix_container">
                     <div class="fix_form">
@@ -58,21 +65,26 @@
                     </div>
                 </div>
                 <div class="submit_btn">
-                    <input type="submit" value="確定">
+                    <!-- <input type="submit" value="確定"> -->
+                    <a href="home.html" class="home-button" style="margin-top: 15px;">確定</a>
                 </div>
+            </form>
+
         </div>
-        </form>
-    </div>
+
+
+
+
     </div>
     <div class="footer">
         <div class="content">
-            <div class="footerInfo">
-                <div class="logo">80X80</div>
-                114級專題-第六組 App Wizard<br />
-                © 2023 高雄大學資管系 National University of Kaohsiung
-            </div>
+          <div class="footerInfo">
+            <!-- <div class="logo">80X80</div> -->
+            114級專題-第六組 App Wizard<br />
+            © 2023 高雄大學資管系 National University of Kaohsiung
+          </div>
         </div>
-    </div>
+      </div>
 </body>
 
 </html>

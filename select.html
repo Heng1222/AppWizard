@@ -11,26 +11,34 @@
 <body>
     <div class="header">
         <div class="headerInfo content">
-            <div class="logoArea">
-                <div class="logo">60X60</div>
-                <h1 class="logoN">App Wizard</h1>
-            </div>
-            <ul class="menu">
-                <li><a href="" class="topic">
-                        <div class="Info">
-                            <div class="img">46X46</div>
-                            帥哥
-                        </div>
-                    </a></li>
-                <li><a href="" class="topic">頁面1</a></li>
-                <li><a href="" class="topic">頁面2</a></li>
-            </ul>
+          <div class="logoArea">
+            <!-- <div class="logo"></div> -->
+            <h1 class="logoN">App Wizard</h1>
+          </div>
+          <ul class="menu">
+            <li><a href="" class="topic" style="pointer-events: none;">
+                <div class="Info">
+                  <div class="img"></div>
+                  Kai
+                </div>
+              </a>
+              <ul class="drop-down-menu">
+                <li><a href="fix.html">修改資料</a>
+                </li>
+                <li><a href="index.html">登出</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="home.html" class="topic">首頁</a></li>
+            <li><a href="select.html" class="topic">開始分析</a></li>
+            <li><a href="findRecord.html" class="topic">分析紀錄</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
     <div class="content">
         <div class="select-container">
             <div class="fixed-section">
-                <label>
+                <label style="margin-right: 10px;">
                     <input type="radio" name="platform" value="google" checked> Google Play
                 </label>
                 <label>
@@ -41,15 +49,14 @@
                 <p class="select-text">選擇分析App</p>
                 <div class="search-bar">
                     <input type="text" placeholder="搜尋App" class="search-input">
-                    <button class="search-btn" onclick="searchAndScroll()">搜尋</button>
+                    <a href = "" class="search-btn">搜尋</a>
                 </div>
                 <div class="container">
                         <div class="item"><img src="logo/happymore.png"></div>
-                        <div class="item"><img src="logo/happymore.png" alt=""></div>
-                        <div class="item"><img src="logo/happymore.png" alt=""></div>
-                        <div class="item"><img src="logo/happymore.png" alt=""></div>
-                        <div class="item"><img src="logo/happymore.png" alt=""></div>
-                        <div class="item"><img src="logo/happymore.png" alt=""></div>
+                        <div class="item"><img src="logo/ieat.png" alt=""></div>
+                        <!-- <div class="item"><img src="logo/mywaydon.png" alt=""></div> -->
+                        <div class="item"><img src="logo/pk.png" alt=""></div>
+                        <div class="item"><img src="logo/sushi.png" alt=""></div>
                         <div class="item"><img src="logo/oneblue.png" alt=""></div>
                         <div class="item"><img src="logo/wacity.png" alt=""></div>
                         <div class="item"><img src="logo/wangping.png" alt=""></div>
@@ -67,20 +74,20 @@
             </div>
 
             <div class="buttons">
-                <button onclick="cancelAnalysis()">取消</button>
-                <button onclick="confirmAnalysis()">確認</button>
+                <a href = "home.html">取消</a>
+                <a href = "modification.html">確認</a>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="content">
-            <div class="footerInfo">
-                <div class="logo">80X80</div>
-                114級專題-第六組 App Wizard<br />
-                © 2023 高雄大學資管系 National University of Kaohsiung
-            </div>
+          <div class="footerInfo">
+            <!-- <div class="logo">80X80</div> -->
+            114級專題-第六組 App Wizard<br />
+            © 2023 高雄大學資管系 National University of Kaohsiung
+          </div>
         </div>
-    </div>
+      </div>
     <script>
         function searchAndScroll() {
             var searchTerm = document.querySelector('.search-input').value.toLowerCase();
