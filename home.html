@@ -50,102 +50,101 @@
       </ul>
     </div>
   </div>
-  <div class="content" style="height: 650px;">
+  <div class="content" style="height: 650px;padding: 50px;">
     <!-- 上半 -->
-    <div style=" margin: 40px 80px 10px;">
-      <p style="display: inline-flex">
-        <span class="home-topic">個人資料</span>
-      </p>
-      <p style="display: inline-flex; margin-left: 410px;">
-        <span class="home-topic">熱門分析App</span>
-      </p>
-
-    </div>
     <div class="flex-container ">
-      <div class="home_info">
-        <p>姓名：陳某某</p><br>
-        <p>生日：2000/12/01</p><br>
-        <p>電話：0912345678</p><br>
-        <p>上次分析：2023/12/01</p><br>
-        <p>權限狀態：一般使用者</p><br>
-        <p>總分析次數：4</p><br>
+      <div style="width: 40%;padding: 20px;">
+        <p style="margin-bottom: 15px;">
+          <span class="home-topic" >個人資料</span>
+        </p>
+        <div class="home_info">
+          <p>姓名：陳某某</p><br>
+          <p>生日：2000/12/01</p><br>
+          <p>電話：0912345678</p><br>
+          <p>上次分析：2023/12/01</p><br>
+          <p>權限狀態：一般使用者</p><br>
+          <p>總分析次數：4</p><br>
+        </div>
       </div>
-
-      <div class="home_analysis">
-        <div class="home_iconContainer">
-          <!-- 輪播start -->
-          <div class="slider">
-            <div class="slide-container">
-              <div class="slide"></div>
-              <div class="slide" style="margin-left:20px"><img src="logo/wangping.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/happymore.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/ieat.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/mc.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/oneblue.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/pk.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/sushi.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/threeshon.png" width="90" height="90"></div>
-              <div class="slide"><img src="logo/wacity.png" width="90" height="90"></div>
+      <div style="width: 55%;padding: 20px;">
+        <p style="margin-bottom: 15px;">
+          <span class="home-topic" >熱門分析App</span>
+        </p>
+        <div class="home_analysis">
+          <div class="home_iconContainer">
+            <!-- 輪播start -->
+            <div class="slider">
+              <div class="slide-container">
+                <div class="slide" style="margin-left: 3%;"></div>
+                <div class="slide"><img src="logo/wangping.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/happymore.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/ieat.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/mc.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/oneblue.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/pk.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/sushi.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/threeshon.png" width="90" height="90"></div>
+                <div class="slide"><img src="logo/wacity.png" width="90" height="90"></div>
+              </div>
+              <div class="slider-btn prev-btn" onclick="prevSlide()">❮</div>
+              <div class="slider-btn next-btn" onclick="nextSlide()">❯</div>
             </div>
-            <div class="slider-btn prev-btn" onclick="prevSlide()">❮</div>
-            <div class="slider-btn next-btn" onclick="nextSlide()">❯</div>
+            <!-- js start -->
+            <script>
+              let currentIndex = 0;
+
+              function showSlide(index) {
+                const slideContainer = document.querySelector('.slide-container');
+                const slideWidth = document.querySelector('.slide').offsetWidth;
+                slideContainer.style.transform = `translateX(${-index * slideWidth}px)`;
+                currentIndex = index;
+              }
+
+              function nextSlide() {
+                const totalSlides = document.querySelectorAll('.slide').length;
+                currentIndex = (currentIndex + 1) % totalSlides;
+                showSlide(currentIndex);
+              }
+
+              function prevSlide() {
+                const totalSlides = document.querySelectorAll('.slide').length;
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                showSlide(currentIndex);
+              }
+            </script>
+            <!-- js end -->
+
+            <!-- 輪播end-->
+            <a class="home-button" href="select.html" style="    margin-top: 15px;">馬上分析</a>
+
           </div>
-          <!-- js start -->
-          <script>
-            let currentIndex = 0;
-
-            function showSlide(index) {
-              const slideContainer = document.querySelector('.slide-container');
-              const slideWidth = document.querySelector('.slide').offsetWidth;
-              slideContainer.style.transform = `translateX(${-index * slideWidth}px)`;
-              currentIndex = index;
-            }
-
-            function nextSlide() {
-              const totalSlides = document.querySelectorAll('.slide').length;
-              currentIndex = (currentIndex + 1) % totalSlides;
-              showSlide(currentIndex);
-            }
-
-            function prevSlide() {
-              const totalSlides = document.querySelectorAll('.slide').length;
-              currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-              showSlide(currentIndex);
-            }
-          </script>
-          <!-- js end -->
-
-          <!-- 輪播end-->
-          <a class="home-button" href="select.html" style="    margin-top: 15px;">馬上分析</a>
 
         </div>
-
       </div>
 
     </div>
 
     <!-- 下半 -->
-    <div style=" margin: 20px 80px 0px;">
-      <p>
+      <p style="margin-bottom: 15px;padding:20px;">
         <span class="home-topic">歷史紀錄</span>
       </p>
-    </div>
 
     <div class="home_history">
-      <div>
+      <div class="history_info">
         <span class="history_title">分析日期</span>
         <span class="history_title">分析對象</span>
         <span class="history_title">分析時段</span>
         <span class="history_title">評論數量</span>
         <span class="history_title">處理建議</span>
+        <span class="history_title" style="width: 200px;">&nbsp;</span>
       </div>
       <div class="history_info">
         <span class="history_title">2000/12/01</span>
-        <img style="margin-right: 120px;" src="logo/wangping.png" width="60" height="60">
+        <span class="history_title"><img  src="logo/wangping.png" width="60" height="60"></span>
         <span class="history_title">2023/12/01</span>
         <span class="history_title">200</span>
-        <span class="history_title" style="margin-right: 40px">暫無</span>
-        <a class="home-button" href="analysisResult.html" style="margin-top: 0;">詳細結果</a>
+        <span class="history_title">暫無</span>
+        <span class="history_title" style="width: 200px;"><a class="home-button" href="analysisResult.html" style="margin-top: 0; width: 90px;">詳細結果</a></span>
       </div>
     </div>
   </div>
