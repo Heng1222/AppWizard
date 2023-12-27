@@ -1,6 +1,8 @@
 # App-Wizard
 https://heng1222.github.io/AppWizard/analysisResult.html
 
+index.html
+
 
 findRecord.html
 
@@ -19,5 +21,9 @@ select.html
 
 
 modification.html
+
+
+analysisResult.html
+
 
 
