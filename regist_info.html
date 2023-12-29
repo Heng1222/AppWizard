@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>App Wizard 登入頁面</title>
+  <link rel="stylesheet" href="all.css">
+  <style>
+    .menu li:first-child .topic:first-child:hover {
+      /*下拉選單的不要hover變色*/
+      background-color: rgb(255, 255, 255);
+      color: #a30202b6;
+    }
+    body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2, p, input, button {
+            font-size: 1.5em;
+        }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="headerInfo content">
+      <div class="logoArea">
+        <!-- <div class="logo"></div> -->
+        <h1 class="logoN">App Wizard</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="login.html" class="topic">登入</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- header end -->
+  <!-- partial:index.partial.html -->
+  <div class="content">
+    <h2>登入成功!</h2>
+    <p>請輸入註冊資訊：</p>
+    
+    <input type="password" id="newPassword" placeholder="新密碼"><br>
+    <input type="password" id="confirmPassword" placeholder="確認新密碼"><br>
+  </div>
+  <div class="fix_form">
+      <label class="fixLabel">姓名:</label>
+      <input type="text" required><br>
+  </div>
+  <div class="fix_form">
+      <label class="fixLabel">生日:</label>
+      <input type="date" required><br>
+  </div>
+  <div class="fix_form">
+      <label class="fixLabel">電話:</label>
+      <input type="text" required><br>
+  </div>
+
+    <button onclick="cancel()">取消</button>
+    <button onclick="confirmChange()">確認更改</button>
+    
+
+    </div>
+  </div>
+  <!-- partial -->
+  <!-- footer start-->
+  <div class="footer">
+    <div class="content">
+      <div class="footerInfo">
+        <!-- <div class="logo">80X80</div> -->
+        114級專題-第六組 App Wizard<br />
+        © 2023 高雄大學資管系 National University of Kaohsiung
+      </div>
+    </div>
+  </div>
+  <!--footer end  -->
+</body>
+
+</html>
