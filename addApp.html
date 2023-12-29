@@ -1,0 +1,90 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>新增APP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home_style.css">
+  <link rel="stylesheet" href="all.css">
+  <script type=”text/javascript” src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <script>
+    $('.variable-width').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true
+    });
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="headerInfo content">
+      <div class="logoArea">
+        <!-- <div class="logo"></div> -->
+        <h1 class="logoN">App Wizard</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="" class="topic" style="pointer-events: none;">
+            <div class="Info">
+              <div class="img"></div>
+              Kai
+            </div>
+          </a>
+          <ul class="drop-down-menu">
+            <li><a href="fix.html">修改資料</a>
+            </li>
+            <li><a href="index.html">登出</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="home.html" class="topic">首頁</a></li>
+        <li><a href="select.html" class="topic">開始分析</a></li>
+        <li><a href="findRecord.html" class="topic">分析紀錄</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content" style="height:350;padding: 50px;">
+    <h1 class="contentTopic">新增APP</h1>
+
+    <div class="fix-box">
+        <form action="" method="post">
+            <div class="fix_container">
+                <div class="fix_form">
+                    <label class="fixLabel">爬蟲網址:</label>
+                    <input type="url" required><br>
+                </div>
+                <div class="fix_form">
+                    <label class="fixLabel">APP名稱:</label>
+                    <input type="text" required><br>
+                </div>
+            </div>
+            <div class="submit_btn">
+                <!-- <input type="submit" value="確定"> -->
+                <a href="home.html" class="home-button" style="margin-top: 15px ;margin-right:100px ; display: inline-block;">取消</a>
+                <a href="home.html" class="home-button" style="margin-top: 15px; display: inline-block;">確定</a>
+            </div>
+        </form>
+
+     </div>
+    </div>
+
+  <div class="footer">
+    <div class="content">
+      <div class="footerInfo">
+        <!-- <div class="logo">80X80</div> -->
+        114級專題-第六組 App Wizard<br />
+        © 2023 高雄大學資管系 National University of Kaohsiung
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
