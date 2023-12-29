@@ -511,6 +511,7 @@ h2.chartTopic {
     margin: 2px 5px 2px 5px;
 }
 
+.fix_form input[type="url"],
 .fix_form input[type="text"],
 .fix_form input[type="date"],
 .fix_form input[type="password"],
