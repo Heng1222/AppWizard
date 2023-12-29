@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊驗證碼</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2, p, input, button {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h2>註冊驗證碼</h2>
+    <p>請輸入收到的驗證碼：</p>
+    
+    <input type="text" id="verificationCode" placeholder="輸入驗證碼">
+    
+    
+    <button id="confirmVerification" onclick="confirmVerification()">確認</button>
+
+    
+</body>
+</html>
