@@ -1,28 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE ht：l>
 <html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta char：et="UTF-8">
   <title>App Wizard 登入頁面</title>
   <link rel="stylesheet" href="all.css">
   <style>
-    .menu li:first-child .topic:first-child:hover {
+    .menu li：first-child .topic:first-child:hover {
       /*下拉選單的不要hover變色*/
       background-color: rgb(255, 255, 255);
       color: #a30202b6;
     }
-    body {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        h2, p, input, button {
-            font-size: 1.5em;
-        }
   </style>
 </head>
 
@@ -42,31 +30,42 @@
   <!-- header end -->
   <!-- partial:index.partial.html -->
   <div class="content">
-    <h2>登入成功!</h2>
-    <p>請輸入註冊資訊：</p>
-    
-    <input type="password" id="newPassword" placeholder="新密碼"><br>
-    <input type="password" id="confirmPassword" placeholder="確認新密碼"><br>
-  </div>
-  <div class="fix_form">
-      <label class="fixLabel">姓名:</label>
-      <input type="text" required><br>
-  </div>
-  <div class="fix_form">
-      <label class="fixLabel">生日:</label>
-      <input type="date" required><br>
-  </div>
-  <div class="fix_form">
-      <label class="fixLabel">電話:</label>
-      <input type="text" required><br>
-  </div>
-
-    <button onclick="cancel()">取消</button>
-    <button onclick="confirmChange()">確認更改</button>
-    
-
+    <div class="wrap">
+      <h1 class="regist-topic">驗證成功</h1>
+      <p class="regist-hint">歡迎您的加入！請設定您的基本資料及密碼</p>
+      <p class="regist-hint">請輸入帳號基本資訊：</p>
+      <div class="fix_form">
+        <label class="fixLabel">帳號：</label>
+        <input type="password" disabled placeholder="Kaiapp1230"><br>
+      </div>
+      <div class="fix_form">
+        <label class="fixLabel">密碼：</label>
+        <input type="password" required placeholder="設定密碼"><br>
+      </div>
+      <div class="fix_form">
+        <label class="fixLabel">確認密碼：</label>
+        <input type="password" required placeholder="確認密碼"><br>
+      </div>
+      <div class="fix_form">
+        <label class="fixLabel">姓名：</label>
+        <input type="text" required><br>
+      </div>
+      <div class="fix_form">
+        <label class="fixLabel">生日：</label>
+        <input type="date" required><br>
+      </div>
+      <div class="fix_form">
+        <label class="fixLabel">電話：</label>
+        <input type="text" required><br>
+      </div>
+      <div class="regist-buttons">
+        <a class="home-button" href="login.html" onclick="cancel()">取消</a>
+      <a class="home-button" href="login.html" onclick="confirmChange()">送出</a>
+      </div>
     </div>
   </div>
+
+
   <!-- partial -->
   <!-- footer start-->
   <div class="footer">

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>註冊驗證碼</title>
-    <style>
+    <link rel="stylesheet" href="all.css">
+    <!-- <style>
         body {
             text-align: center;
             display: flex;
@@ -14,20 +16,44 @@
             height: 100vh;
         }
 
-        h2, p, input, button {
+        h2,
+        p,
+        input,
+        button {
             font-size: 1.5em;
         }
-    </style>
+    </style> -->
 </head>
-<body>
-    <h2>註冊驗證碼</h2>
-    <p>請輸入收到的驗證碼：</p>
-    
-    <input type="text" id="verificationCode" placeholder="輸入驗證碼">
-    
-    
-    <button id="confirmVerification" onclick="confirmVerification()">確認</button>
 
-    
+<body>
+    <div class="header">
+        <div class="headerInfo content">
+          <div class="logoArea">
+            <!-- <div class="logo"></div> -->
+            <h1 class="logoN">App Wizard</h1>
+          </div>
+          <ul class="menu">
+            <li><a href="login.html" class="topic">登入</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="content" style="text-align: center;margin-bottom: 200px;">
+        <h1 class="verify-topic">開通驗證碼</h1>
+        <p class="verify-hint">請在下方輸入管理員給您的驗證碼，輸入完成後就能開始設定帳號的基本資料。<br/>完成設定後即可開始使用本系統。<br/></p>
+        <p class="verify-hint" style="margin-top: 0px;">若您還沒有取得驗證碼，請先點選 <a href="">這裡</a> 和管理員聯繫。</a></p>
+        <p class="verify-hint" style="margin-top: 50px;">請輸入您收到的驗證碼：</p>
+        <input class='verify' type="text" id="verificationCode" placeholder="輸入驗證碼">
+        <a class='home-button' href="regist_info.html" onclick="confirmVerification()">確認</a>
+    </div>
+    <div class="footer">
+        <div class="content">
+          <div class="footerInfo">
+            <!-- <div class="logo">80X80</div> -->
+            114級專題-第六組 App Wizard<br />
+            © 2023 高雄大學資管系 National University of Kaohsiung
+          </div>
+        </div>
+      </div>
 </body>
+
 </html>
