@@ -912,3 +912,37 @@ input.verify{
     margin-bottom: 100px;
 }
 /* regist_info.html end */
+/* captcha.html start */
+.addArea{
+        margin: 0 auto;
+        max-width: 300px;
+        background: #dedede;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        box-shadow: 0 0 2em #e6e9f9;
+        gap: 2em;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-weight: bold;
+}
+.addArea .account {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: #4d4d4d;
+}
+
+.addArea .account label {
+    font-size: 20px;
+    margin-bottom: 10px     ;
+}
+.addArea .account input {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 95%;
+}
+/* captcha.html end */

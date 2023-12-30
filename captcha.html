@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>App Wizard 發配驗證碼頁面</title>
+  <link rel="stylesheet" href="all.css">
+  <style>
+    .menu li:first-child .topic:first-child:hover {
+      /*下拉選單的不要hover變色*/
+      background-color: rgb(255, 255, 255);
+      color: #a30202b6;
+    }
+    button.captcha-button {
+    width: 90px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 10px;
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px;
+    background-color: #dc3545; 
+    color: #f0f0f0; 
+}
+
+/* 滑鼠懸停時的按鈕樣式 */
+button.captcha-button:hover {
+    background-color: #a82936; 
+    color: #f0f0f0;  /* 滑鼠懸停時的背景顏色 */
+}
+  </style>
+  <script>
+    function showAlert() {
+      alert('驗證碼：WeiChengHandsome\n有效期限：3天');
+    }
+  </script>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="headerInfo content">
+      <div class="logoArea">
+        <!-- <div class="logo"></div> -->
+        <h1 class="logoN">App Wizard</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="" class="topic" style="pointer-events: none;">
+            <div class="Info">
+              <div class="img"></div>
+              Kai
+            </div>
+          </a>
+          <ul class="drop-down-menu">
+            <li><a href="fix.html">修改資料</a>
+            </li>
+            <li><a href="index.html">登出</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="home.html" class="topic">首頁</a></li>
+        <li><a href="select.html" class="topic">開始分析</a></li>
+        <li><a href="findRecord.html" class="topic">分析紀錄</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- header end -->
+  <!-- partial:index.partial.html -->
+  <div class="content">
+    <div class="addArea">
+      <div>
+        <div class="account">
+          <label for="email">新增帳號：</label>
+          <div class="sec-2">
+            <input class='account' type="text" name="account" placeholder="請輸入帳號" />
+          </div>
+        </div>
+      </div>
+      <button class="captcha-button" onclick="showAlert()">產生驗證碼</button>
+      <!--<div class="foot"><span>開通帳號</span><span>忘記密碼?</span></div>-->
+    </div>
+  </div>
+  <!-- partial -->
+  <!-- footer start-->
+  <div class="footer">
+    <div class="content">
+      <div class="footerInfo">
+        <!-- <div class="logo">80X80</div> -->
+        114級專題-第六組 App Wizard<br />
+        © 2023 高雄大學資管系 National University of Kaohsiung
+      </div>
+    </div>
+  </div>
+  <!--footer end  -->
+</body>
+
+</html>
