@@ -141,7 +141,6 @@ body {
 }
 
 /* header start */
-
 .header {
     width: 100%;
     background:#991200;
@@ -512,7 +511,7 @@ h2.chartTopic {
 
 /* fix html start */
 .fix_container {
-    background-color: #939393;
+    background-color: #c7c7c7;
     width: 450px;
     margin: 0 auto;
     padding: 30px;
@@ -551,27 +550,6 @@ h2.chartTopic {
     border: 1px solid #ccc;
 }
 
-/* 送出紐 */
-.submit_btn {
-    margin: 0 auto;
-    text-align: right;
-}
-
-.submit_btn input[type="submit"] {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    margin-right: 580px;
-}
-
-.submit_btn input[type="submit"]:hover {
-    background-color: black;
-    color: white;
-}
 
 .contentTopic {
     text-align: center;
@@ -811,6 +789,28 @@ h2.chartTopic {
 
 /* select.html end */
 /* other start*/
+
+/* admin */
+.footer-admin{
+    background-color: #007F64;
+}
+.header-admin{
+    background-color: #007F64;
+}
+.header-admin .menu .topic:hover {
+    background-color: rgb(255, 255, 255);
+    color: #007F64;
+}
+.header-admin .menu li:first-child .topic:first-child:hover {  /*下拉選單的不要hover變色*/ 
+    background-color: #007F64;
+    color: rgb(255, 255, 255);
+}
+.headerInfo .Info .img-admin {
+    background-image: url("systemImg/root.png");
+}
+
+/* admin */
+
 a.home-button {
     width: 70px;
     margin: 0 auto;
@@ -830,6 +830,13 @@ a.home-button:hover {
     background-color: #a82936; 
     color: #f0f0f0;  /* 滑鼠懸停時的背景顏色 */
 }
+.home-button-box{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
 /* index.html */
 .welcome-title{
     font-size: 30px;
